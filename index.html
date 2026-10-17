@@ -1,0 +1,9 @@
+<!doctype html>
+<meta name="viewport" content="width=device-width">
+<p>Opening form…</p>
+<script>
+ fetch('https://script.google.com/macros/s/AKfycbxPbQBOAEYe0ghmlHgq17JOlkozMi63Ox7v4JKpaqKg4s9hz8__ABn_KWQRUVRsdaYfqA/exec')
+   .then(r => r.json())
+   .then(d => location.replace(d.url))
+   .catch(() => document.body.textContent = 'Something went wrong, please try again.');
+</script>
